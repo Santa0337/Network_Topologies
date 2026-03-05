@@ -1,0 +1,33 @@
+testbed:
+  name: cml_testbed
+  credentials:
+    default:
+      username: cisco
+      password: cisco
+  
+  custom:
+    email_settings:
+      smtp:
+        host: smtp.gmail.com
+        port: 587
+        ssl: True
+        username: cdhanush057@gmail.com
+        password: fosybqoxlgapfsvl  
+      from: cdhanush057@gmail.com
+      to: sen75052@gmail.com
+
+devices:
+  R1:
+    os: iosxe
+    type: router
+    connections:
+      cli:
+        protocol: telnet
+        ip: 10.10.20.171
+  R2:
+    os: iosxe
+    type: router
+    connections:
+      cli:
+        protocol: telnet
+        ip: 10.10.20.172
